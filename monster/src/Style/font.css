@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'green-energy';
+    src: url('../Assets/Fonts/GREEN_ENERGY.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'gesrics';
+    src: url('../Assets/Fonts/Gesrics.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  .green-energy-font {
+    font-family: 'green-energy', sans-serif;
+  }
+  .gesrics-font {
+    font-family: 'gesrics', sans-serif;
+  }
