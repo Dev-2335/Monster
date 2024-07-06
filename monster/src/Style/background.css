@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     background-image: url('../Assets/Images/HEX FPR WBE 1.png'); 
-    background-color: white;
+    background-color: #00ffffcc;
     background-size: cover;
     height: 5668px; 
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden; 
+    
   }
   
   .hole {
@@ -18,9 +19,46 @@
     left: 0px;
     background-image: none;
     overflow: hidden;
-    display: flex;
+    display: fixed;
     justify-content: center;
+    opacity: 0.94;
   }
+
+.hole-fliters{
+  height: 140px;
+  width: 140px;
+  position:absolute;
+  /* border: solid 20px black; */
+  border-radius: 50%;
+  /* opacity: 0.5; */
+  /* background: rgba(0, 255, 255, 0.34); */
+  /* background: rgb(0,255,255); */
+  background: radial-gradient(circle at 50% 50%, 
+  /* ... (unchanged sections for center) */
+  /* Middle 10 parts (increasing, darker black with smooth transitions) */
+  rgba(0, 0, 0, 0.2) 13.33%, /* Dark black (increased opacity) */
+  rgba(0, 0, 0, 0.25) 16.66%, /* Even darker black (transition) */
+  rgba(0, 0, 0, 0.3) 20%,    /* Very dark black (increased opacity) */
+  rgba(0, 0, 0, 0.35) 23.33%, /* Darkest black (transition) */
+  rgba(0, 0, 0, 0.4) 26.66%, /* Dark black (increased opacity) */
+  rgba(0, 0, 0, 0.45) 30%,    /* Very dark black (transition) */
+  /* Last 10 parts (focusing on very dark sections with steeper opacity increase) */
+  rgba(0, 0, 0, 0.5) 33.33%,  /* Very dark black (increased opacity) */
+  rgba(0, 0, 0, 0.6) 36.66%, /* Darker black (transition) */
+  rgba(0, 0, 0, 0.7) 40%,    /* Very dark black (increased opacity) */
+  rgba(0, 0, 0, 0.8) 45%,    /* Even darker black (transition) */
+  rgba(0, 0, 0, 0.85) 50%,   /* Very dark black (significant opacity increase) */
+  rgba(0, 0, 0, 0.9) 55%,    /* Darkest black (transition) */
+  rgba(0, 0, 0, 0.94) 60%,   /* Very dark black (significant opacity increase) */
+  rgba(0, 0, 0, 0.80) 65%,   /* Even darker black (transition) */
+  rgba(0, 0, 0, 0.80) 70%,   /* Very dark black (significant opacity increase) */
+  rgba(0, 0, 0, 0.50) 75%        /* Black (full opacity) */
+);
+
+
+
+/* Black at 100% with full opacity */
+}
   
   
   

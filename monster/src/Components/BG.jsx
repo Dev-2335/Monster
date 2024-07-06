@@ -51,13 +51,23 @@ const BG = () => {
       zIndex:1,
       clipPath: getClipPathRule(), 
     };
+
+    const holeFilterStyle = {
+        top: holePosition.y-70,
+        left: holePosition.x-70,
+
+    }
   
   
     return (
       <div className='bg'onMouseMove={handleMouseMove}  >
       {/* remove true or false at production time*/}
-        {true && <div className="hole" ref={holeRef} style={holeStyle}>
+        {true && <> {true && <div className="hole" ref={holeRef} style={holeStyle}>
         </div>}
+        <div  style={holeFilterStyle}  className="hole-fliters"></div>
+        </>
+        
+        }
       </div>
     );
 }
