@@ -1,17 +1,8 @@
 import React, { useState, useRef } from 'react';
 import '../Style/background.css'
 
-const BG = () => {
-    const holeRef = useRef(null); 
-    const [holePosition, setHolePosition] = useState({ x: 0, y: 0 });
-  
-    const handleMouseMove = (event) => {
-    const container = event.currentTarget; 
-    const containerRect = container.getBoundingClientRect();
-    const relativeX = event.clientX - containerRect.left; 
-    const relativeY = event.clientY - containerRect.top; 
-    setHolePosition({ x: relativeX, y: relativeY });
-  };
+const BG = ({holeRef,holePosition}) => {
+    
     const getClipPathRule = () => {
       const radius = 60; // Adjust radius as needed
       const circumference = Math.PI * radius;
@@ -49,6 +40,7 @@ const BG = () => {
       display: 'flex',
       justifyContent: 'center',
       zIndex:1,
+    
       clipPath: getClipPathRule(), 
     };
 
@@ -60,7 +52,8 @@ const BG = () => {
   
   
     return (
-      <div className='bg'onMouseMove={handleMouseMove}  >
+      <>
+      <div className='bg' >
       {/* remove true or false at production time*/}
         {true && <> {true && <div className="hole" ref={holeRef} style={holeStyle}>
         </div>}
@@ -68,7 +61,11 @@ const BG = () => {
         </>
         
         }
+      
       </div>
+        <h1 style={{color:'white', zIndex:103}}>lorem ipsum dolor 
+        </h1>
+        </>
     );
 }
 
