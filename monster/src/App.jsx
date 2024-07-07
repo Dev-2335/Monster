@@ -1,12 +1,12 @@
 import React from 'react';
-import BG from './Components/BG';
+import RoadMap from './Pages/RoadMap';
 
 
 const App = () => {
   return (
-    <>
-    <BG/>
-    </>
+    <div style={{background:'black',height:'100vh'}}>
+    <RoadMap />
+    </div>
   );
 };
 

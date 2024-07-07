@@ -1,0 +1,25 @@
+.title{
+    font-size: 80px;
+    color: #00FFFF;
+}
+.phase {
+    width: 40%;
+    height: 60vh;
+    margin: 10vh 10vh;
+    border: 5px dashed #00FFFF;      
+    border-radius: 15px;         
+    background: radial-gradient(ellipse at center, #02AAE1 30%, black 70%);
+    opacity: 0.7;
+    padding: 20px;
+}
+
+.phase .text {
+margin: 0;                     
+padding: 0;                     
+list-style-type: none;     
+color: white;     
+}
+
+.phase .text li {
+margin-bottom: 20px;            
+}
