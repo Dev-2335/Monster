@@ -2,6 +2,7 @@
 import React, { useRef,useState } from 'react';
 import BG from './Components/BG';
 import Home from './Components/Home';
+import RoadMap from './Pages/RoadMap';
 
 
 const bgStyle ={
@@ -42,7 +43,7 @@ const Main = ({setHolePosition}) => {
   return (
     <div style={holeDivStyle } onMouseMove={handleMouseMove} >
       <div style={{}}></div>
-      <Home/>
+      <RoadMap/>
     </div>
   )
 }
