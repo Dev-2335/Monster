@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'green-energy'; 
+    src: url('./Assets/Fonts/GREEN_ENERGY.ttf') format('truetype'); /* Replace with your font file path */
+  }
+@font-face {
+    font-family: 'gesrics'; 
+    src: url('./Assets/Fonts/Gesrics.otf') format('truetype'); /* Replace with your font file path */
+}
+
+.green-energy-fonts{
+    font-family: green-energy;
+ }
+
+ .gesrics{
+  font-family: gesrics;
+ }
+
+.display-flex-spaceBetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.display-flex-spaceAround{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.center-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+

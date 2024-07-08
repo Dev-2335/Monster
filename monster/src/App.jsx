@@ -1,4 +1,3 @@
-
 import React, { useRef,useState } from 'react';
 import BG from './Components/BG';
 import Home from './Components/Home';
@@ -6,13 +5,6 @@ import RoadMap from './Pages/RoadMap';
 import NFT from './Pages/NFT';
 import Bonus from './Pages/Bonus';
 
-
-const bgStyle ={
-  position: 'fixed',
-  top:0,
-  left:0,
-  zIndex: -25
-}
 
 
 const mainStyle={
@@ -44,7 +36,8 @@ const Main = ({setHolePosition}) => {
   };
   return (
     <div style={holeDivStyle } onMouseMove={handleMouseMove} >
-      <div style={{}}></div>
+      <Home/>
+      <Tokenomics/>
       <RoadMap/>
       <NFT/>
       <Bonus/>
