@@ -1,5 +1,6 @@
 import React, { useRef,useState } from 'react';
 import BG from './Components/BG';
+
 import Home from './Pages/Home';
 import RoadMap from './Pages/RoadMap';
 import Tokenomics from './Pages/Tokenomics';
@@ -35,7 +36,6 @@ const Main = ({setHolePosition}) => {
   };
   return (
     <div style={holeDivStyle } onMouseMove={handleMouseMove} >
-      <div style={{}}></div>
       <Home/>
       <Tokenomics/>
       <RoadMap/>
