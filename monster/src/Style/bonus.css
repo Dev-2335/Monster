@@ -1,6 +1,9 @@
 .title{
-    font-size: 80px;
-    color: #00FFFF;
+  font-size: 10rem;
+
+  background: -webkit-linear-gradient(#00ffff,#02AAE1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bonus-card {
