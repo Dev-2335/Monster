@@ -4,7 +4,7 @@ import '../Style/nft.css';
 
 const NFT = () => {
   return (
-    <div className="container">
+    <div className="container" id='Nft'>
         <div className="row">
             <div className="col text-center green-energy-font title">NFT</div>
         </div>
