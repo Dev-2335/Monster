@@ -3,17 +3,18 @@
     color: #00FFFF;
 }
 
-.phase-title{
+.phase1-title{
     text-align: center;
     margin: 0;                     
     padding: 0;   
     font-size: 23px;                  
     list-style-type: none;     
     color: #00FFFF;
-    text-shadow:0 2px 10px #FFFFFF;
+    text-shadow:0 2px 6px #ffffffb7;
+    margin-bottom: 2vh;
 }
 
-.phase {
+.phase1 {
     width: 80%;
     height: 70vh;
     margin-left: 5vh;
@@ -23,15 +24,69 @@
     padding: 20px;
 }
 
-.phase .text {
+.phase1 .text {
 margin: 0;                     
 padding: 0;   
 font-size: 13px;                  
 list-style-type: none;     
 color: white;
-text-shadow:0 5px 10px #FFFFFF;
+text-shadow:0 3px 6px #FFFFFF;
+}
+
+.phase1 .text li {
+margin-bottom: 35px;            
+}
+
+.phase-title{
+    text-align: center;
+    margin: 0;                     
+    padding: 0;   
+    font-size: 23px;                  
+    list-style-type: none;     
+    color: gray;
+    margin-bottom: 2vh;
+}
+
+.phase {
+    width: 80%;
+    height: 70vh;
+    margin-left: 5vh;
+    border: 2px dashed white;      
+    border-radius: 15px;
+}
+
+.phase .text {
+margin: 20px;                     
+padding: 0;   
+font-size: 13px;                  
+list-style-type: none;     
+color: gray;
+opacity: 0.5;
+text-shadow:0 3px 6px #FFFFFF;
 }
 
 .phase .text li {
 margin-bottom: 35px;            
+}
+
+.lock{
+    position:absolute;
+    z-index: 2;
+    font-size:369px;
+    font-family:'Open Sans', sans-serif;
+    font-weight:bolder;
+    background-color:gray;
+    padding:0px;
+    opacity:0.4;
+    width:21.8%;
+    border-radius:15px;
+    text-align:center;
+}
+.lock-text{
+    position:absolute;
+    z-index: 3;
+    margin: 200px 15px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align:center;
 }
