@@ -4,7 +4,7 @@ import '../Style/bonus.css';
 
 const Bonus = () => {
     return (
-        <div className="container">
+        <div className="container" id='Bonus'>
             <div className="row">
                 <div className="col text-center green-energy-font title">BONUS</div>
             </div>
