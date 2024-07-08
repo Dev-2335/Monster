@@ -10,8 +10,8 @@ const RoadMap = () => {
         </div>
         <div className="row">
           <div className="col">
-            <div className='phase-title gesrics-font'>PHASE 1</div>
-            <div className='phase'>
+            <div className='phase1-title gesrics-font'>PHASE 1</div>
+            <div className='phase1'>
             <ul className="text gesrics-font">
             <li>1. SOCIALS</li>
             <li>2. WEBSITE</li>
@@ -28,7 +28,7 @@ const RoadMap = () => {
           <div className="col">
             <div className='phase-title gesrics-font'>PHASE 2</div>
             <div className='phase'>
-            <ul className="text gesrics-font">
+            <ul className="text gesrics-font" style={{position:'absolute', zIndex: '1'}}>
             <li>1. SOCIALS</li>
             <li>2. WEBSITE</li>
             <li>3. ANIMATIONS</li>
@@ -39,12 +39,14 @@ const RoadMap = () => {
             <li>8. NFT SHOP AND TASKS</li>
             <li>9. REFERRAL AIRDROPS</li>
           </ul>
+          <span className='lock'>?</span>
+          <span className='gesrics-font lock-text'>COMING AFTER<br/> PHASE 1</span>
             </div>
           </div>
           <div className="col">
             <div className='phase-title gesrics-font'>PHASE 3</div>
             <div className='phase'>
-            <ul className="text gesrics-font">
+            <ul className="text gesrics-font" style={{position:'absolute', zIndex: '1'}}>
             <li>1. SOCIALS</li>
             <li>2. WEBSITE</li>
             <li>3. ANIMATIONS</li>
@@ -55,6 +57,8 @@ const RoadMap = () => {
             <li>8. NFT SHOP AND TASKS</li>
             <li>9. REFERRAL AIRDROPS</li>
           </ul>
+          <span className='lock'>?</span>
+          <span className='gesrics-font lock-text'>COMING AFTER<br/> PHASE 2</span>
             </div>
           </div>
         </div>

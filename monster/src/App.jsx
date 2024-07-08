@@ -3,6 +3,8 @@ import React, { useRef,useState } from 'react';
 import BG from './Components/BG';
 import Home from './Components/Home';
 import RoadMap from './Pages/RoadMap';
+import NFT from './Pages/NFT';
+import Bonus from './Pages/Bonus';
 
 
 const bgStyle ={
@@ -44,6 +46,8 @@ const Main = ({setHolePosition}) => {
     <div style={holeDivStyle } onMouseMove={handleMouseMove} >
       <div style={{}}></div>
       <RoadMap/>
+      <NFT/>
+      <Bonus/>
     </div>
   )
 }
