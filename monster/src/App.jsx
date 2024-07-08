@@ -1,15 +1,9 @@
-
 import React, { useRef,useState } from 'react';
 import BG from './Components/BG';
-import Home from './Components/Home';
+import Home from './Pages/Home';
+import RoadMap from './Pages/RoadMap';
+import Tokenomics from './Pages/Tokenomics';
 
-
-const bgStyle ={
-  position: 'fixed',
-  top:0,
-  left:0,
-  zIndex: -25
-}
 
 
 const mainStyle={
@@ -43,6 +37,8 @@ const Main = ({setHolePosition}) => {
     <div style={holeDivStyle } onMouseMove={handleMouseMove} >
       <div style={{}}></div>
       <Home/>
+      <Tokenomics/>
+      <RoadMap/>
     </div>
   )
 }
