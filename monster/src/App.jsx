@@ -1,9 +1,9 @@
 import React, { useRef,useState } from 'react';
 import BG from './Components/BG';
-
-import Home from './Pages/Home';
+import Home from './Components/Home';
 import RoadMap from './Pages/RoadMap';
-import Tokenomics from './Pages/Tokenomics';
+import NFT from './Pages/NFT';
+import Bonus from './Pages/Bonus';
 
 
 
@@ -39,6 +39,8 @@ const Main = ({setHolePosition}) => {
       <Home/>
       <Tokenomics/>
       <RoadMap/>
+      <NFT/>
+      <Bonus/>
     </div>
   )
 }
