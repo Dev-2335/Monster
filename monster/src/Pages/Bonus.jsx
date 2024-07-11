@@ -1,32 +1,99 @@
-import React from 'react'
-import '../Style/font.css';
-import '../Style/bonus.css';
+import React, { useState } from "react";
+import "../App.css";
+import "../Style/bonus.css";
+import bonusBG from "../Assets/Images/Rectangle 12-2.png";
+import prizeTable1 from '../Assets/Images/prizeTable.png'
+import prizeTable2 from '../Assets/Images/prizetable2.png'
+import viewPrizeVector from '../Assets/Images/view-prize-vector.png'
 
 const Bonus = () => {
-    return (
-        <div className="container" id='Bonus'>
-            <div className="row">
-                <div className="col text-center green-energy-font title">BONUS</div>
+  const [isBonus1Hovered, setIsBonus1Hovered] = useState(false);
+  const [isBonus2Hovered, setIsBonus2Hovered] = useState(false);
+  const [bonusTable1,setBonusTable1] = useState(false);
+  const [bonusTable2,setBonusTable2] = useState(false);
+  const handleHoverExit = (setvalue, setTabel) => {
+    setvalue(false);
+    setTimeout(() => {
+      setTabel(false)
+      },150)
+  };
+  const handleHoverIn = (setvalue,setTable) => {
+    setvalue(true);
+    setTimeout(() => {
+      setTable(true)
+      },100)
+  };
+  return (
+    <div className="bonus-main center-item-column">
+      <div className="page-heading">Bonus</div>
+      <div
+        className="bonus1 center-item"
+        style={{ height: isBonus1Hovered ? "70vh" : "30vh" }}
+        onMouseLeave={() => handleHoverExit(setIsBonus1Hovered,setBonusTable1)}
+      >
+        <div className="bonus-content">
+          <div className="subContent center-item-column">
+            <div className="main-content"   style={{ height: isBonus1Hovered ? "70vh" : "30vh" }}>
+                <h1 className="green-energy-fonts">Nft Contest</h1>
+                <p className="gesrics">hey crypto folks here is a NFT contest where you have to buy nfts to make sureyou enter the contest. which includes many types of nfts with different price tags most loyal holders are more eligible for the future airdop and giveaways</p>
+                {bonusTable1 && <div >
+                  <p className="gesrics" style={{color:'#00ffff'}}>WE WILL PICK RANDOM NFT HOLDERS AND THEY WILL GET HUGE REWARDS </p>
+                  <img src={prizeTable1} alt="" />
+                  </div>}
             </div>
-            <div className="row">
-                <div className="bonus-card col">
-                    <div className="bonus-header green-energy-font">NFT CONTEST</div>
-                    <div className="bonus-description gesrics-font">
-                        Hey crypto folks, here is an NFT contest where you have to buy NFTs to make sure you enter the contest.
-                        Which includes many types of NFTs with different price tags. Most loyal holders are more eligible for the future airdrop and giveaways.
-                    </div>
-                </div>
+            <div
+              className="view-prize"
+              onMouseEnter={() => handleHoverIn(setIsBonus1Hovered,setBonusTable1)}
+            >
+               <div className="view-prize-content">
+                <p className="gesrics" style={{color:'#00ffff'}}>View Prize</p>
+              </div>
+              <img src={viewPrizeVector} alt="" />
             </div>
-            <div className="row">
-                <div className="bonus-card col">
-                    <div className="bonus-header  green-energy-font">LOYALTY CONTEST</div>
-                    <div className="bonus-description  gesrics-font">
-                        The top 10 supply holders will get many exciting airdrops and many other rewards after the launch.
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    )
-}
+        <img
+          style={{ height: `calc(${isBonus1Hovered ? "70vh" : "30vh"} - 9px)` }}
+          src={bonusBG}
+          alt=""
+        />
+      </div>
+      <div
+        className="bonus2 center-item"
+        style={{ height: isBonus2Hovered ? "70vh" : "30vh" }}
+        onMouseLeave={() => handleHoverExit(setIsBonus2Hovered,setBonusTable2)}
+      >
+        <div className="bonus-content">
+          <div className="subContent center-item-column">
+            <div className="main-content"   style={{ height: isBonus2Hovered ? "70vh" : "30vh" }}>
+
+            <h1 className="green-energy-fonts">LOYALTY CONTEST</h1>
+            <p className="gesrics">THE top 10 the supply holders will get many exCiting AIRDROPS AND MANY OTHER REWARDS AFTER THE LAUNCH.</p>
+            {bonusTable2 && <div >
+                  <p className="gesrics" style={{color:'#00ffff'}}>TOP 10 HOLDERS WILL GET THESE REWARDS </p>
+                  <img src={prizeTable2} alt="" />
+                  </div>}
+            </div>
+
+            <div
+              className="view-prize"
+              onMouseEnter={() => handleHoverIn(setIsBonus2Hovered,setBonusTable2)}
+            >
+              <div className="view-prize-content">
+                <p className="gesrics" style={{color:'#00ffff'}}>View Prize</p>
+              </div>
+              <img src={viewPrizeVector} alt="" />
+            </div>
+          </div>
+        </div>
+        <img
+          style={{ height: `calc(${isBonus2Hovered ? "70vh" : "30vh"} - 9px)` }}
+          src={bonusBG}
+          alt=""
+        />
+      </div>
+    </div>
+  );
+};
 
 export default Bonus;

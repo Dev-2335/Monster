@@ -7,6 +7,7 @@ import Bonus from './Pages/Bonus';
 import Tokenomics from './Pages/Tokenomics';
 
 
+
 const mainStyle={
   position:'absolute',
   top:0,

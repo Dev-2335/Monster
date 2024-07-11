@@ -8,13 +8,7 @@
   align-items: center;
   gap: 4%;
 }
-.tokenomics-heading{
-    font-size: 10rem;
 
-    background: -webkit-linear-gradient(#00ffff,#02AAE1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .tokenomics-logo img{
   height: 120px;
 }
@@ -28,33 +22,31 @@
 
 .liquidity, .tokenomics-max-supply, .tokenomics-presale{
   height: 150px;
-  width: 14%;
+  width: 14.5%;
   background-image: url('../Assets/Images/Rectangle 9.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   display: flex;
 flex-direction: column;
 align-items: start;
 justify-content: center;
-padding-left: 25px;
+padding-left :2%;
 }
 .liquidity h1, .tokenomics-max-supply h1, .tokenomics-presale h1{
-  font-size: 2rem;
+  font-size: 1.6em;
 }
 
 
 .tokenomics-middle-section-heading{
   color:#00ffff;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
-/* .liquidity h1{
-  font-size: 1rem;
-} */
 
 
 .tokenomics-presale{
-  width: 28%;
+  padding-left: 3.5%;
+  width: 28vw;
   height: 150px;
 }
 

@@ -1,29 +1,84 @@
-.title{
-  font-size: 10rem;
-
-  background: -webkit-linear-gradient(#00ffff,#02AAE1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.bonus-main {
+  height: 130vh;
+  width: 100%;
+  gap: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 
-.bonus-card {
-    width: 100%;
-    height: 30vh;
-    margin-left: 5vh;
-    margin-bottom: 10vh;
-    border: 2px dashed #00FFFF;      
-    border-radius: 25px;         
-    background: radial-gradient(ellipse at center, rgba(2, 170, 225, 0.3) 40%, rgba(0, 0, 0, 0.5) 70%);
-    padding: 20px;
+.bonus1,
+.bonus2 {
+  height: 30vh;
+  width: 70%;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='53' ry='53' stroke='%2302AAE1FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 53px;
+  overflow: hidden;
+  padding: 2px;
+  transition: height 500ms;
 }
 
-.bonus-header {
-  font-size: 3rem;
-  color: #00FFFF;
-  margin-bottom: 10px;
+.bonus1 img,
+.bonus2 img {
+  position:absolute;
+  width: calc(69%);
+  transition: height 500ms;
 }
 
-.bonus-description {
-  font-size: 1rem;
-  margin-bottom: 20px;
+.bonus-content{
+  z-index: 24;
+  height: 100%;
+  width: 100%;
+
 }
+
+.subContent {
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main-content{
+  overflow: hidden;
+  width: 100%;
+  padding: 2%;
+  z-index: 5;
+}
+  .main-content div{
+    margin-top: 10vh;
+    display: flex;
+    align-items: space-between;  
+    justify-content: center;
+}
+.main-content img {
+  margin-top: 2vh;
+  height: 30vh;
+  width: 50%;
+}
+.main-content h1{
+  color: #00ffff;
+}
+.main-content p{
+  font-size: 0.8em;
+}
+
+.view-prize{
+text-align: center;
+  height: 10vh;
+  font-size: 0.9em;
+  width: 20%;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='11' ry='11' stroke='%2302AAE1FF' stroke-width='4' stroke-dasharray='13' stroke-dashoffset='17' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 11px 11px 15px 15px;
+  overflow: hidden;
+}
+
+.view-prize img{
+  height: 16px;
+  width: 16px;
+}
+.view-prize p{
+  margin: 0.5vh;
+  padding:0;
+}
+
