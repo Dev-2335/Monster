@@ -27,10 +27,19 @@
     gap: 20px;
 }
 
-.center-item{
+.center-item, .center-item-column{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+.center-item-column{
+    flex-direction: column;
+}
+.page-heading{
+    font-size: 6rem;
+    font-family: green-energy;
+    background: -webkit-linear-gradient(#00ffff,#02AAE1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 

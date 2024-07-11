@@ -1,9 +1,10 @@
 import React, { useRef,useState } from 'react';
 import BG from './Components/BG';
-import Home from './Components/Home';
+import Home from './Pages/Home';
 import RoadMap from './Pages/RoadMap';
 import NFT from './Pages/NFT';
 import Bonus from './Pages/Bonus';
+import Tokenomics from './Pages/Tokenomics';
 
 
 

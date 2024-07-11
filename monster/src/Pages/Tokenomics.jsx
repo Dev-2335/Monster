@@ -8,7 +8,7 @@ const Tokenomics = () => {
   const presale_value = '1,500,000,000';
   return (
     <div className='tokenomics-main' id='Tokenomics'> 
-        <div className="tokenomics-heading">
+        <div className="page-heading">
           <p className='green-energy-fonts'>Tokenomics</p>
         </div>
         <div className="tokenomics-middle-section">

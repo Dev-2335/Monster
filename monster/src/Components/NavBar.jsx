@@ -14,7 +14,7 @@ const NavBar = () => {
   const navbarMenus =[
 'Home',
  'Tokenomics',
- 'RoadMap',
+ 'Roadmap',
 'Nft',
 'Bonus',
 ]
