@@ -3,7 +3,7 @@ import "../Style/background.css";
 
 const BG = ({ holeRef, holePosition }) => {
   const getClipPathRule = () => {
-    const radius = 148// Adjust radius as needed
+    const radius = 148;
     const circumference = Math.PI * radius;
     const step = (Math.PI * 2) / circumference;
     const startStep = circumference * (5 / 8);
@@ -49,20 +49,10 @@ const BG = ({ holeRef, holePosition }) => {
   };
 
   return (
-    <>
-      <div className="bg">
-        {/* remove true or false at production time*/}
-        {true && (
-          <>
-            {" "}
-            {true && (
-              <div className="hole" ref={holeRef} style={holeStyle}></div>
-            )}
-            <div style={holeFilterStyle} className="hole-fliters"></div>
-          </>
-        )}
-      </div>
-    </>
+    <div className="bg">
+      <div className="hole" ref={holeRef} style={holeStyle}></div>
+      <div style={holeFilterStyle} className="hole-fliters"></div>
+    </div>
   );
 };
 
