@@ -24,7 +24,7 @@ const Bonus = () => {
       },100)
   };
   return (
-    <div className="bonus-main center-item-column">
+    <div className="bonus-main center-item-column" >
       <div className="page-heading">Bonus</div>
       <div
         className="bonus1 center-item"

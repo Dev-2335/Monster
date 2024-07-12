@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import "../Style/background.css";
 
 const BG = ({ holeRef, holePosition }) => {
@@ -32,7 +32,7 @@ const BG = ({ holeRef, holePosition }) => {
     overflow: "hidden",
     position: "absolute",
     width: "100%",
-    height: "5668px",
+    height: "530vh",
     top: 0,
     left: 0,
     backgroundColor: "black",

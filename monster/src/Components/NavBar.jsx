@@ -5,11 +5,6 @@ import navbar_bg from '../Assets/Images/bar.png'
 import navbar_logo from '../Assets/Images/logo.png'
 import { Link } from 'react-scroll'
 
-
-
-
-
-
 const NavBar = () => {
   const navbarMenus =[
 'Home',

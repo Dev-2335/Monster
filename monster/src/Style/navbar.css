@@ -22,6 +22,11 @@
     font-size: 2rem;
     font-style: bold;
   }
+  .navbar-items a:hover{
+    background: -webkit-linear-gradient(#ffffff,#999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   
   .navbar-menus{
       width: 100%;

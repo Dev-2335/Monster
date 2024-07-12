@@ -35,6 +35,20 @@ padding-left :2%;
 }
 .liquidity h1, .tokenomics-max-supply h1, .tokenomics-presale h1{
   font-size: 1.6em;
+  padding-right: 2px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: transparent;
+}
+.typinganimation{
+  color: white;
+  animation: 
+  typing 4s;
+}
+
+@keyframes typing {
+  from { width: 0;}
 }
 
 

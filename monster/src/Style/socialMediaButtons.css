@@ -1,0 +1,47 @@
+.socialMediaButtons-main {
+    height: 17vh;
+    width: 17vw;
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    color: black;
+  }
+  
+  .text-box-bg {
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    height: 9vh;
+    top: 0;
+    width: 17vw;
+    background: url(../Assets/Images/social-media-box-bg.png) center no-repeat;
+    background-size: contain;
+    margin: 0;
+    color: #00ffff;
+
+    padding-top: 1vh;
+background-color: black;
+   
+  }
+  .text-box-bg h4{
+    font-size: 1.3em;
+  }
+  
+  .logo-box-bg {
+    cursor: pointer;
+    opacity: 1;
+    color: wheat;
+    position: relative;
+    top: 1vh;
+    margin: 0;
+    height: 7vh;
+    width: 4.5vw;
+    background: url('../Assets/Images/social-media-logo-bg-box.png') bottom center no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease-out;
+  }
+   .logo-box-bg img{
+     width: 50%;
+  }
+  
