@@ -1,18 +1,17 @@
 .bg {
   padding: 0;
   margin: 0;
-  background-image: url('../Assets/Images/HEX FPR WBE 1.png'); 
+  background-image: url("../Assets/Images/HEX FPR WBE 1.png");
   background-color: #00ffffcc;
   background-size: cover;
-  height: 530vh; 
+  height: 530vh;
   background-repeat: no-repeat;
   width: 100%;
-  overflow: hidden; 
-  
+  overflow: hidden;
 }
 
 .hole {
-  position: fixed; 
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0px;
@@ -24,33 +23,24 @@
   opacity: 1;
 }
 
-.hole-fliters{
-height: 300px;
-width: 300px;
-position:absolute;
-/* border: solid 20px black; */
-border-radius: 50%;
-/* opacity: 0.5; */
-/* background: rgba(0, 255, 255, 0.34); */
-/* background: rgb(0,255,255); */
+.hole-fliters {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  border-radius: 50%;
 
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, 
-
-  /* Transparent center with a slightly smaller size */
-  rgba(0, 0, 0, 0) 15%,  /* Transparent center */
-
-  /* Dark black with exponential increase in opacity for a larger outer area */
-  rgba(0, 0, 0, 0.2) 20%,    /* Slightly darker black (transition) */
-  rgba(0, 0, 0, 0.4) 25%,    /* Very dark black (increased opacity) */
-  rgba(0, 0, 0, 0.6) 30%,    /* Darker black (transition) */
-  rgba(0, 0, 0, 0.8) 35%,    /* Very dark black (increased opacity) */
-  rgba(0, 0, 0, 0.9) 40%,    /* Darker black (transition) */
-
-  /* Adjust these stops for finer control over the exponential increase */
-  rgba(0, 0, 0, 0.95) 45%,   /* Very dark black (significant opacity increase) */
-  rgba(0, 0, 0, 0.975) 50%,  /* Darker black (transition) */
-  rgba(0, 0, 0, 0.99) 55%,    /* Very dark black (significant opacity increase) */
-  rgba(0, 0, 0, 1) 100%        /* Black (full opacity) */
-);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0.2) 20%,
+    rgba(0, 0, 0, 0.4) 25%,
+    rgba(0, 0, 0, 0.6) 30%,
+    rgba(0, 0, 0, 0.8) 35%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 0.95) 45%,
+    rgba(0, 0, 0, 0.975) 50%,
+    rgba(0, 0, 0, 0.99) 55%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }

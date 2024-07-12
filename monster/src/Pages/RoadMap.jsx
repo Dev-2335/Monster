@@ -75,18 +75,18 @@ const RoadMap = () => {
           {isPhase2unlocked && render_phase2}
         </div>
         <div className={!isPhase3unlocked ? "phase-3" : "phase-1"}>
-          {!isPhase3unlocked && <div className="phase-content">
-            <img src={questionMark} alt="" />
-            {render_phase3}
-          </div>
-}
-          {!isPhase3unlocked && 
+          {!isPhase3unlocked && (
+            <div className="phase-content">
+              <img src={questionMark} alt="" />
+              {render_phase3}
+            </div>
+          )}
+          {!isPhase3unlocked && (
             <div className="coming-soon center-item gesrics">
               <p>Coming After Phase 2</p>
             </div>
-          }
+          )}
           {isPhase3unlocked && render_phase3}
-
         </div>
       </div>
     </div>

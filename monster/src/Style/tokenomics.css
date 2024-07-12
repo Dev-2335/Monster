@@ -2,17 +2,17 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column; 
-  align-items: stretch; 
+  flex-direction: column;
+  align-items: stretch;
   justify-content: center;
   align-items: center;
   gap: 4%;
 }
 
-.tokenomics-logo img{
+.tokenomics-logo img {
   height: 120px;
 }
-.tokenomics-middle-section{
+.tokenomics-middle-section {
   display: flex;
   align-items: space-around;
   justify-content: center;
@@ -20,20 +20,24 @@
   width: 200%;
 }
 
-.liquidity, .tokenomics-max-supply, .tokenomics-presale{
+.liquidity,
+.tokenomics-max-supply,
+.tokenomics-presale {
   height: 150px;
   width: 14.5%;
-  background-image: url('../Assets/Images/Rectangle 9.png');
+  background-image: url("../Assets/Images/Rectangle 9.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
-flex-direction: column;
-align-items: start;
-justify-content: center;
-padding-left :2%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 2%;
 }
-.liquidity h1, .tokenomics-max-supply h1, .tokenomics-presale h1{
+.liquidity h1,
+.tokenomics-max-supply h1,
+.tokenomics-presale h1 {
   font-size: 1.6em;
   padding-right: 2px;
   width: 100%;
@@ -41,26 +45,24 @@ padding-left :2%;
   overflow: hidden;
   color: transparent;
 }
-.typinganimation{
+.typinganimation {
   color: white;
-  animation: 
-  typing 4s;
+  animation: typing 4s;
 }
 
 @keyframes typing {
-  from { width: 0;}
+  from {
+    width: 0;
+  }
 }
 
-
-.tokenomics-middle-section-heading{
-  color:#00ffff;
+.tokenomics-middle-section-heading {
+  color: #00ffff;
   font-size: 0.8em;
 }
 
-
-.tokenomics-presale{
+.tokenomics-presale {
   padding-left: 3.5%;
   width: 28vw;
   height: 150px;
 }
-
