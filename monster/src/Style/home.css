@@ -38,13 +38,8 @@
 display: flex;
 align-items: space-between;
 }
-.social-media  a {
-    height: 100%;
-    cursor: pointer;
-    margin: auto;
-}
-.social-media img{
-    height: 80%;
+.social-media a{
+    text-decoration: none;
 }
 
 .section2 img{

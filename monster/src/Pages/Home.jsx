@@ -2,11 +2,12 @@ import React from 'react'
 import Navbar from '../Components/NavBar.jsx'
 import '../Style/home.css'
 import '../App.css'
+import SocialMediaButtons from '../Components/SocialMediaButtons.jsx'
 import img29 from '../Assets/Images/IMG_0029.png'
 import mainText from '../Assets/Images/MAIN TEXT.png'
-import social_insta from '../Assets/Images/insta.png'
-import social_telegram from '../Assets/Images/telegram.png'
-import social_twitter from '../Assets/Images/Twitter.png'
+import  twitterLogo from '../Assets/Images/social-media-twitter.png'
+import  telegramLogo from '../Assets/Images/social-media-telegram.png'
+import  instagramLogo from '../Assets/Images/social-media-instagram.png'
 
 const Home = () => {
   const telegramLink = 'https://www.google.com';
@@ -26,9 +27,9 @@ const Home = () => {
           <div className="gesrics section1-text center-item">REV UP YOUR REVENUE WITH MONETER EMERCY</div>
 
           <div className="social-media">
-          <a href={telegramLink} target='_blank' rel="noreferrer"><img  src={social_telegram} alt="" /></a>
-          <a href={instagramLink} target='_blank' rel="noreferrer"><img  src={social_insta} alt="" /></a>
-          <a href={twitterLink} target='_blank' rel="noreferrer"><img  src={social_twitter} alt="" /></a>
+          <a  href={instagramLink}><SocialMediaButtons text={"Telegram"} imagePath={telegramLogo}/></a>
+          <a  href={instagramLink}><SocialMediaButtons text={"Instagram"} imagePath={instagramLogo}/></a>
+          <a  href={instagramLink}><SocialMediaButtons text={"Twitter"} imagePath={twitterLogo}/></a>
        </div>
        </div>
 

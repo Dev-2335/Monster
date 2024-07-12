@@ -5,6 +5,7 @@ import RoadMap from './Pages/RoadMap';
 import NFT from './Pages/NFT';
 import Bonus from './Pages/Bonus';
 import Tokenomics from './Pages/Tokenomics';
+import SocialMediaButtons from './Components/SocialMediaButtons';
 
 
 
@@ -15,16 +16,19 @@ const mainStyle={
   zIndex: 100,
   color:'white',
   width:'100%',
-  height:'5668px'
+  height:'530vh',
+  overflow :'hidden'
 }
 
 const holeDivStyle={
   overflow :'hidden',
   position: 'absolute',
   width: '100%', 
-  height: '5668px',
+  height: '530vh',
   top: 0, 
   left: 0, 
+  overflow :'hidden'
+
 }
 
 const Main = ({setHolePosition}) => {
@@ -38,10 +42,10 @@ const Main = ({setHolePosition}) => {
   return (
     <div style={holeDivStyle } onMouseMove={handleMouseMove} >
       <Home/>
-      <Tokenomics/>
+      <Tokenomics />
       <RoadMap/>
       <NFT/>
-      <Bonus/>
+      <Bonus id='Bonus'/>
     </div>
   )
 }

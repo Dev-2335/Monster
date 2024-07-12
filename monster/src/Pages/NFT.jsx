@@ -7,7 +7,7 @@ import quetionMark from '../Assets/Images/_.png'
 const NFT = () => {
   const nftItems = Array(8).fill('Coming After Launch'); 
   return (
-    <div className="nft-main center-item-column">
+    <div className="nft-main center-item-column" id='Nft'>
       <div className="page-heading ">NFT</div>
       <div className="nft-container">
         {nftItems.map((item, index) => (
