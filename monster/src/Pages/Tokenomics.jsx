@@ -45,7 +45,7 @@ const Tokenomics = () => {
         <h2 className="tokenomics-middle-section-heading">PRESALE</h2>
         <h1
           ref={ref}
-          style={{ color: !isInView ? "transparent" : "white" }}
+          style={{ color: !isInView ? "black" : "white" }}
           className={isInView ? "typinganimation" : ""}
         >
           {presale_value}

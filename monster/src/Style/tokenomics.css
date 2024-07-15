@@ -46,8 +46,10 @@
   color: transparent;
 }
 .typinganimation {
-  color: white;
-  animation: typing 4s;
+  background: -webkit-linear-gradient(right, #5050508d,#d2cfcf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: typing 4s ease-in;
 }
 
 @keyframes typing {

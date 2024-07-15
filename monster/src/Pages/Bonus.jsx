@@ -11,6 +11,8 @@ const Bonus = () => {
   const [isBonus2Hovered, setIsBonus2Hovered] = useState(false);
   const [bonusTable1, setBonusTable1] = useState(false);
   const [bonusTable2, setBonusTable2] = useState(false);
+  const openHeight ='73vh'
+  const closedHeight ='35vh'
   const handleHoverExit = (setvalue, setTabel) => {
     setvalue(false);
     setTimeout(() => {
@@ -28,14 +30,14 @@ const Bonus = () => {
       <div className="page-heading">Bonus</div>
       <div
         className="bonus1 center-item"
-        style={{ height: isBonus1Hovered ? "70vh" : "30vh" }}
+        style={{ height: isBonus1Hovered ? openHeight : closedHeight }}
         onMouseLeave={() => handleHoverExit(setIsBonus1Hovered, setBonusTable1)}
       >
         <div className="bonus-content">
           <div className="subContent center-item-column">
             <div
               className="main-content"
-              style={{ height: isBonus1Hovered ? "70vh" : "30vh" }}
+              style={{ height: isBonus1Hovered ? openHeight : closedHeight }}
             >
               <h1 className="green-energy-fonts">Nft Contest</h1>
               <p className="gesrics">
@@ -70,21 +72,21 @@ const Bonus = () => {
           </div>
         </div>
         <img
-          style={{ height: `calc(${isBonus1Hovered ? "70vh" : "30vh"} - 9px)` }}
+          style={{ height: `calc(${isBonus1Hovered ? openHeight : closedHeight} - 9px)` }}
           src={bonusBG}
           alt=""
         />
       </div>
       <div
         className="bonus2 center-item"
-        style={{ height: isBonus2Hovered ? "70vh" : "30vh" }}
+        style={{ height: isBonus2Hovered ? openHeight : closedHeight }}
         onMouseLeave={() => handleHoverExit(setIsBonus2Hovered, setBonusTable2)}
       >
         <div className="bonus-content">
           <div className="subContent center-item-column">
             <div
               className="main-content"
-              style={{ height: isBonus2Hovered ? "70vh" : "30vh" }}
+              style={{ height: isBonus2Hovered ? openHeight : closedHeight }}
             >
               <h1 className="green-energy-fonts">LOYALTY CONTEST</h1>
               <p className="gesrics">
@@ -117,7 +119,7 @@ const Bonus = () => {
           </div>
         </div>
         <img
-          style={{ height: `calc(${isBonus2Hovered ? "70vh" : "30vh"} - 9px)` }}
+          style={{ height: `calc(${isBonus2Hovered ? openHeight : closedHeight} - 9px)` }}
           src={bonusBG}
           alt=""
         />

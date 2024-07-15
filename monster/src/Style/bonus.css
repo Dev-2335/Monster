@@ -1,5 +1,5 @@
 .bonus-main {
-  height: 130vh;
+  height: 144vh;
   width: 100%;
   gap: 4vh;
   display: flex;
@@ -10,7 +10,7 @@
 
 .bonus1,
 .bonus2 {
-  height: 30vh;
+  height: 33vh;
   width: 70%;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='53' ry='53' stroke='%2302AAE1FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 53px;
@@ -57,10 +57,11 @@
   width: 50%;
 }
 .main-content h1{
+  font-size: 2.8em;
   color: #00ffff;
 }
 .main-content p{
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 
 .view-prize{
