@@ -44,7 +44,7 @@ const BG = ({ holeRef, holePosition }) => {
   };
 
   const holeFilterStyle = {
-    top: holePosition.y - 150,
+    top:  holePosition.y-150,
     left: holePosition.x - 150,
   };
 

@@ -23,24 +23,25 @@ const Home = () => {
             <div className="mainText center-item">
               <img src={mainText} alt="Monster Energy" />
             </div>
-            <div className="gesrics section1-text center-item">
+            <div className="gesrics section1-text center-item" style={{fontSize:'1.2em'}}>
               REV UP YOUR REVENUE WITH MONETER EMERCY
             </div>
 
             <div className="social-media">
-              <a href={telegramLink}>
+              <a href={telegramLink} target="_blank" rel="noreferrer">
+                
                 <SocialMediaButtons
                   text={"Telegram"}
                   imagePath={telegramLogo}
                 />
               </a>
-              <a href={instagramLink}>
+              <a href={instagramLink} target="_blank" rel="noreferrer">
                 <SocialMediaButtons
                   text={"Instagram"}
                   imagePath={instagramLogo}
                 />
               </a>
-              <a href={twitterLink}>
+              <a href={twitterLink} target="_blank" rel="noreferrer">
                 <SocialMediaButtons text={"Twitter"} imagePath={twitterLogo} />
               </a>
             </div>
